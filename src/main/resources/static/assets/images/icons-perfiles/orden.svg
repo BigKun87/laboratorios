@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <g id="Grupo_41390" data-name="Grupo 41390" transform="translate(1018 -6665)">
+    <rect id="Rectángulo_24119" data-name="Rectángulo 24119" width="65" height="65" transform="translate(-1018 6665)" fill="none"/>
+    <g id="Grupo_41387" data-name="Grupo 41387" transform="translate(-1343.5 6614)">
+      <text id="User_Pages" data-name="User Pages" transform="translate(339.5 106)" fill="#25385a" font-size="12" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Orden</tspan></text>
+      <g id="heart" transform="translate(278.845 59)">
+        <g id="Grupo_74" data-name="Grupo 74" transform="translate(68.85 0)">
+          <g id="Grupo_73" data-name="Grupo 73">
+            <circle id="Elipse_8" data-name="Elipse 8" cx="4.677" cy="4.677" r="4.677" transform="translate(6.131)" fill="#3e95f8"/>
+            <path id="Trazado_116" data-name="Trazado 116" d="M79.658,188.2c-5.966,0-10.808,1.811-10.808,7.776v10.734h3.29c.025-3.695.288-9.611,1.768-11.545v11.545H85.4V195.16c1.479,1.933,1.743,7.874,1.768,11.545h3.29V195.976C90.466,190.011,85.624,188.2,79.658,188.2Zm0,12.57s-3.314-2.694-3.314-4.008a1.764,1.764,0,0,1,1.768-1.768,1.741,1.741,0,0,1,1.553.951,1.788,1.788,0,0,1,1.553-.951,1.764,1.764,0,0,1,1.768,1.768C82.972,198.143,79.658,200.77,79.658,200.77Z" transform="translate(-68.85 -176.649)" fill="#3e95f8"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

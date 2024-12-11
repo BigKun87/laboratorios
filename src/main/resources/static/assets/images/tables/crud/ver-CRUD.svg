@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69">
+  <g id="ver-CRUD" transform="translate(-247 -1499)">
+    <rect id="Rectángulo_24111" data-name="Rectángulo 24111" width="69" height="69" transform="translate(247 1499)" fill="none"/>
+    <g id="Grupo_41358" data-name="Grupo 41358" transform="translate(6754.168 2228.521)">
+      <g id="Group" transform="translate(-6485.168 -715.926)">
+        <path id="Vector" d="M7.99,4A4,4,0,1,1,6.82,1.17,4,4,0,0,1,7.99,4Z" transform="translate(8.789 4.794)" fill="#25385a"/>
+        <path id="Vector-2" data-name="Vector" d="M0,8.789S4.794,0,12.784,0,25.569,8.789,25.569,8.789s-4.794,8.789-12.784,8.789S0,8.789,0,8.789Zm12.784,5.593a5.593,5.593,0,1,0-3.955-1.638,5.593,5.593,0,0,0,3.955,1.638Z" transform="translate(0 0)" fill="#25385a"/>
+      </g>
+      <text id="Ver" transform="translate(-6484.167 -675.054)" fill="#25385a" font-size="14" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Ver</tspan></text>
+    </g>
+  </g>
+</svg>

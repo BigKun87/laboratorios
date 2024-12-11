@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="Grupo_41407" data-name="Grupo 41407" transform="translate(185 -6696)">
+    <rect id="Rectángulo_24120" data-name="Rectángulo 24120" width="62" height="62" transform="translate(-185 6696)" fill="none"/>
+    <g id="Grupo_41403" data-name="Grupo 41403" transform="translate(-178 6701)">
+      <path id="edit-text" d="M18.188,3.728,19.316,2.6a3.609,3.609,0,0,1,4.988,0l.91.91a3.5,3.5,0,0,1,0,4.975L24.086,9.614l-5.9-5.9ZM16.829,5.088,5.148,16.768a2.183,2.183,0,0,0-.641,1.385L4.161,21.91a1.648,1.648,0,0,0,.462,1.282,1.582,1.582,0,0,0,1.128.474h.141l3.757-.346a2.265,2.265,0,0,0,1.385-.654L22.714,10.986l-5.9-5.9ZM28.817,27.757a.969.969,0,0,0-.962-.962H2.212a.962.962,0,0,0,0,1.923H27.856A.969.969,0,0,0,28.817,27.757Z" transform="translate(10.384 -1.6)" fill="#25385a"/>
+      <text id="Editar" transform="translate(0 47.351)" fill="#25385a" font-size="16" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Editar</tspan></text>
+    </g>
+  </g>
+</svg>

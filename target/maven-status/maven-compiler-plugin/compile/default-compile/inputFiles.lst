@@ -1,0 +1,12 @@
+/Users/daniel/Downloads/demo/src/main/java/com/lp/model/User.java
+/Users/daniel/Downloads/demo/src/main/java/com/lp/controller/DefaultController.java
+/Users/daniel/Downloads/demo/src/main/java/com/lp/DemoApplication.java
+/Users/daniel/Downloads/demo/src/main/java/com/lp/controller/UserController.java
+/Users/daniel/Downloads/demo/src/main/java/com/lp/config/LoginSuccessHandler.java
+/Users/daniel/Downloads/demo/src/main/java/com/lp/service/UserService.java
+/Users/daniel/Downloads/demo/src/main/java/com/lp/entity/UserEntity.java
+/Users/daniel/Downloads/demo/src/main/java/com/lp/repository/UserRepository.java
+/Users/daniel/Downloads/demo/src/main/java/com/lp/model/Employee.java
+/Users/daniel/Downloads/demo/src/main/java/com/lp/config/CustomUserDetails.java
+/Users/daniel/Downloads/demo/src/main/java/com/lp/config/CustomUserDetailsService.java
+/Users/daniel/Downloads/demo/src/main/java/com/lp/config/SecurityConfig.java

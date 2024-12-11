@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <g id="Grupo_41395" data-name="Grupo 41395" transform="translate(593 -6665)">
+    <rect id="Rectángulo_24119" data-name="Rectángulo 24119" width="65" height="65" transform="translate(-593 6665)" fill="none"/>
+    <g id="Grupo_41389" data-name="Grupo 41389" transform="translate(2766.386 40.125)">
+      <g id="Grupo_40944" data-name="Grupo 40944" transform="translate(-3345.386 6635.875)">
+        <g id="Grupo_40770" data-name="Grupo 40770" transform="translate(0 0)">
+          <text id="User_Pages" data-name="User Pages" transform="translate(0 40.735)" fill="#25385a" font-size="12" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Avisos</tspan></text>
+          <g id="chat_2_" data-name="chat (2)" transform="translate(3.163 0)">
+            <g id="Grupo_41073" data-name="Grupo 41073" transform="translate(0 0)">
+              <g id="Grupo_41072" data-name="Grupo 41072">
+                <path id="Trazado_94941" data-name="Trazado 94941" d="M20.244,31.022H2.874A2.87,2.87,0,0,0,0,33.9v11.5a2.87,2.87,0,0,0,2.874,2.874h.958v2.874a.958.958,0,0,0,1.418.843c.019-.019.058-.019.077-.038,5.27-3.534,4.089-2.746,5.269-3.525a.963.963,0,0,1,.517-.153h9.132a2.87,2.87,0,0,0,2.874-2.874V33.9A2.87,2.87,0,0,0,20.244,31.022Zm-7.663,11.5H4.79a.958.958,0,0,1,0-1.916h7.791A.958.958,0,0,1,12.581,42.517Zm5.748-3.832H4.79a.958.958,0,0,1,0-1.916H18.328A.958.958,0,0,1,18.328,38.685Z" transform="translate(0 -31.022)" fill="#3e95f8"/>
+              </g>
+            </g>
+            <g id="Grupo_41075" data-name="Grupo 41075" transform="translate(9.579 7.663)">
+              <g id="Grupo_41074" data-name="Grupo 41074">
+                <path id="Trazado_94942" data-name="Trazado 94942" d="M170.244,151.022h-4.79v6.705a4.791,4.791,0,0,1-4.79,4.79H151.82L150,163.724v1.667a2.87,2.87,0,0,0,2.874,2.874h9.42l5.5,3.678a.963.963,0,0,0,1.494-.8v-2.874h.958a2.87,2.87,0,0,0,2.874-2.874V153.9A2.87,2.87,0,0,0,170.244,151.022Z" transform="translate(-150 -151.022)" fill="#3e95f8"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

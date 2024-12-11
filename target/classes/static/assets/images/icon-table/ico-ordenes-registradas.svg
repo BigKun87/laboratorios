@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="159.24" height="83.764" viewBox="0 0 159.24 83.764">
+  <g id="Grupo_41409" data-name="Grupo 41409" transform="translate(-87 -969.397)">
+    <rect id="Rectángulo_24070" data-name="Rectángulo 24070" width="159.24" height="83.764" transform="translate(87 969.397)" fill="none"/>
+    <g id="Grupo_41268" data-name="Grupo 41268" transform="translate(95.144 985.686)">
+      <text id="User_Pages" data-name="User Pages" transform="translate(2.856 47.973)" fill="#fff" font-size="13" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Órdenes registradas</tspan></text>
+      <g id="heart" transform="translate(58.856 0)">
+        <g id="Grupo_74" data-name="Grupo 74" transform="translate(0 0)">
+          <g id="Grupo_73" data-name="Grupo 73">
+            <circle id="Elipse_8" data-name="Elipse 8" cx="5.441" cy="5.441" r="5.441" transform="translate(7.133)" fill="#fff"/>
+            <path id="Trazado_116" data-name="Trazado 116" d="M81.424,188.2c-6.94,0-12.574,2.106-12.574,9.047v12.488h3.827c.029-4.3.336-11.182,2.056-13.431v13.431H88.107V196.3c1.721,2.249,2.028,9.161,2.056,13.431h3.827V197.247C94,190.306,88.365,188.2,81.424,188.2Zm0,14.623s-3.856-3.135-3.856-4.663a2.052,2.052,0,0,1,2.056-2.056,2.025,2.025,0,0,1,1.806,1.107,2.08,2.08,0,0,1,1.807-1.107,2.052,2.052,0,0,1,2.056,2.056C85.28,199.767,81.424,202.823,81.424,202.823Z" transform="translate(-68.85 -174.762)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
