@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="perfiles-ordenes-menu-icon" transform="translate(11713 355)">
+    <rect id="Rectángulo_24107" data-name="Rectángulo 24107" width="45" height="45" transform="translate(-11713 -355)" fill="#fff"/>
+    <g id="group_1_" data-name="group (1)" transform="translate(-11705 -348.57)">
+      <path id="Trazado_94943" data-name="Trazado 94943" d="M11.041,15.223A5.327,5.327,0,1,0,5.714,9.9,5.327,5.327,0,0,0,11.041,15.223Z" transform="translate(-0.32)" fill="#2674fb"/>
+      <path id="Trazado_94944" data-name="Trazado 94944" d="M17.688,20.507A9.725,9.725,0,0,0,1,27.291a.932.932,0,0,0,.932.932H19.51a.932.932,0,0,0,.932-.932,9.383,9.383,0,0,0-.452-2.912A9.656,9.656,0,0,0,17.688,20.507Z" transform="translate(0 -0.884)" fill="#2674fb"/>
+      <circle id="Elipse_87" data-name="Elipse 87" cx="3.961" cy="3.961" r="3.961" transform="translate(18.01 7.767)" fill="#2674fb"/>
+      <path id="Trazado_94945" data-name="Trazado 94945" d="M23.241,17.67a6.973,6.973,0,0,0-3.547.985c.2.181.406.359.6.555a11.546,11.546,0,0,1,2.751,4.628,10.707,10.707,0,0,1,.407,1.754H29.3a.932.932,0,0,0,.932-.932,7,7,0,0,0-6.99-6.99Z" transform="translate(-1.271 -0.89)" fill="#2674fb"/>
+    </g>
+  </g>
+</svg>

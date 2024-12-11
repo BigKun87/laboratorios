@@ -1,0 +1,43 @@
+          <div class="form-container form-custom-width text-center" th:fragment="formularioLogin">
+              <img src="../assets/images/logos/logo_2.svg" alt="Logo" class="form-logo">
+              <h5 class="mb-4">Inicia sesión con tu cuenta</h5>
+              <form th:action="@{/login}" method="post">
+                  <!-- Campo de correo con ícono -->
+                  <div class="mb-3 input-group">
+                      <span class="input-group-text">
+                          <img src="../assets/images/icons-login/user-icon.svg" alt="user Icon" style="width: 20px;">
+                      </span>
+                      <input type="text" class="form-control" id="email" name="username" placeholder="Ingresa tu usuario">
+                  </div>
+
+                  <!-- Campo de contraseña con ojo -->
+                  <div class="mb-3 input-group">
+                    <span class="input-group-text">
+                      <img src="../assets/images/icons-login/lock-icon.svg" alt="Contrasena Icon" style="width: 20px;">
+                    </span>
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña">
+                      <button type="button" class="btn btn-outline-secondary" id="togglePassword">
+                          <img src="../../assets/images/icons-login/eye-closed-icon.svg" alt="Toggle Password Visibility" id="passwordIcon" style="width: 20px;">
+                      </button>
+                  </div>
+
+                  <!-- Recordar contraseña -->
+                  <div class="mb-3 d-flex align-items-center">
+                      <input type="checkbox" id="remember" class="me-2">
+                      <label for="remember" class="mb-0">Recordar contraseña</label>
+                  </div>
+
+                  <input type="submit" class="btn btn-primary w-100" value="Continuar">
+                  <!-- Botón de enviar -->
+
+              </form>
+              <hr>
+
+              <!-- Olvidaste tu contraseña -->
+              <h6 class="mb-3">¿No recuerdas tu contraseña?</h6>
+              <center>
+                  <h6 class="HightLightBlue  text-center d-flex align-items-center justify-content-center">
+                     <a href="./recuperar-password-mail" target="_blank" class="RecuContra text-white"> ¿No recuerdas tu contraseña?</a>
+                  </h6>
+              </center>
+          </div>

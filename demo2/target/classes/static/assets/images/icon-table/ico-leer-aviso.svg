@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="159.24" height="83.764" viewBox="0 0 159.24 83.764">
+  <g id="Grupo_41409" data-name="Grupo 41409" transform="translate(-90.49 -1867.676)">
+    <path id="Trazado_94982" data-name="Trazado 94982" d="M0,0H159.24V83.764H0Z" transform="translate(90.49 1867.676)" fill="none"/>
+    <g id="Grupo_41287" data-name="Grupo 41287" transform="translate(134.699 1885.126)">
+      <g id="Grupo_40944" data-name="Grupo 40944" transform="translate(0 0)">
+        <g id="Grupo_40770" data-name="Grupo 40770" transform="translate(0 0)">
+          <text id="User_Pages" data-name="User Pages" transform="translate(0 44.708)" fill="#fff" font-size="13" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Leer aviso</tspan></text>
+          <g id="chat_2_" data-name="chat (2)" transform="translate(17.451 0)">
+            <g id="Grupo_41073" data-name="Grupo 41073" transform="translate(0 0)">
+              <g id="Grupo_41072" data-name="Grupo 41072">
+                <path id="Trazado_94941" data-name="Trazado 94941" d="M22.339,31.022H3.171A3.167,3.167,0,0,0,0,34.193V46.877a3.167,3.167,0,0,0,3.171,3.171H4.228V53.22a1.057,1.057,0,0,0,1.564.93c.021-.021.063-.021.085-.042,5.815-3.9,4.512-3.03,5.814-3.89a1.063,1.063,0,0,1,.571-.169H22.339a3.167,3.167,0,0,0,3.171-3.171V34.193A3.167,3.167,0,0,0,22.339,31.022ZM13.882,43.706h-8.6a1.057,1.057,0,0,1,0-2.114h8.6A1.057,1.057,0,0,1,13.882,43.706Zm6.342-4.228H5.285a1.057,1.057,0,0,1,0-2.114H20.225A1.057,1.057,0,0,1,20.225,39.478Z" transform="translate(0 -31.022)" fill="#fff"/>
+              </g>
+            </g>
+            <g id="Grupo_41075" data-name="Grupo 41075" transform="translate(10.57 8.456)">
+              <g id="Grupo_41074" data-name="Grupo 41074">
+                <path id="Trazado_94942" data-name="Trazado 94942" d="M172.339,151.022h-5.285v7.4a5.287,5.287,0,0,1-5.285,5.285h-9.76L150,165.038v1.839a3.167,3.167,0,0,0,3.171,3.171h10.394l6.067,4.059a1.062,1.062,0,0,0,1.649-.888v-3.171h1.057a3.167,3.167,0,0,0,3.171-3.171V154.193A3.167,3.167,0,0,0,172.339,151.022Z" transform="translate(-150 -151.022)" fill="#fff"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

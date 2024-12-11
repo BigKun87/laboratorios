@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="Grupo_41408" data-name="Grupo 41408" transform="translate(101 -6700)">
+    <rect id="Rectángulo_24120" data-name="Rectángulo 24120" width="62" height="62" transform="translate(-101 6700)" fill="none"/>
+    <g id="Grupo_41404" data-name="Grupo 41404" transform="translate(-95 6706)">
+      <g id="trash-can" transform="translate(15.124 0)">
+        <g id="Grupo_40175" data-name="Grupo 40175" transform="translate(0)">
+          <g id="Grupo_40174" data-name="Grupo 40174" transform="translate(0)">
+            <path id="Trazado_94751" data-name="Trazado 94751" d="M50.626,2.908H46.3l-.472-1.417A2.178,2.178,0,0,0,43.763,0h-3.72a2.179,2.179,0,0,0-2.069,1.491L37.5,2.908H33.181A2.183,2.183,0,0,0,31,5.088V6.542c0,.81.729.727,1.511.727H52.08a.726.726,0,0,0,.727-.727V5.088A2.183,2.183,0,0,0,50.626,2.908Zm-11.591,0,.318-.957a.727.727,0,0,1,.69-.5h3.72a.725.725,0,0,1,.689.5l.319.957Z" transform="translate(-31)" fill="#25385a"/>
+          </g>
+        </g>
+        <g id="Grupo_40177" data-name="Grupo 40177" transform="translate(1.631 8.82)">
+          <g id="Grupo_40176" data-name="Grupo 40176" transform="translate(0)">
+            <path id="Trazado_94752" data-name="Trazado 94752" d="M64.666,182l1.159,14.008A2.17,2.17,0,0,0,68,197.992H79.879A2.172,2.172,0,0,0,82.052,196l1.158-14ZM70.3,194.357a.727.727,0,0,1-1.454,0V184.181a.727.727,0,0,1,1.454,0Zm4.361,0a.727.727,0,0,1-1.454,0V184.181a.727.727,0,0,1,1.454,0Zm4.361,0a.727.727,0,0,1-1.454,0V184.181a.727.727,0,1,1,1.454,0Z" transform="translate(-64.666 -182)" fill="#25385a"/>
+          </g>
+        </g>
+      </g>
+      <text id="Borrar" transform="translate(0 46.198)" fill="#25385a" font-size="16" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Borrar</tspan></text>
+    </g>
+  </g>
+</svg>

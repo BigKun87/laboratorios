@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <g id="Grupo_41396" data-name="Grupo 41396" transform="translate(508 -6665)">
+    <rect id="Rectángulo_24119" data-name="Rectángulo 24119" width="65" height="65" transform="translate(-508 6665)" fill="none"/>
+    <g id="Grupo_41383" data-name="Grupo 41383" transform="translate(2722.058 10.934)">
+      <g id="Grupo_40849" data-name="Grupo 40849" transform="translate(1250.998 -246.461)">
+        <text id="User_Pages" data-name="User Pages" transform="translate(-4474.056 6954.992)" fill="#25385a" font-size="12" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Usuarios</tspan></text>
+        <g id="group_1_" data-name="group (1)" transform="translate(-4468.056 6903.957)">
+          <path id="Trazado_94943" data-name="Trazado 94943" d="M12.865,18.873a7.151,7.151,0,1,0-7.151-7.151A7.151,7.151,0,0,0,12.865,18.873Z" transform="translate(1.185)" fill="#3e95f8"/>
+          <path id="Trazado_94944" data-name="Trazado 94944" d="M23.405,21.513A13.056,13.056,0,0,0,1,30.621a1.251,1.251,0,0,0,1.251,1.251h23.6A1.251,1.251,0,0,0,27.1,30.621a12.6,12.6,0,0,0-.607-3.909A12.964,12.964,0,0,0,23.405,21.513Z" transform="translate(0 3.267)" fill="#3e95f8"/>
+          <circle id="Elipse_87" data-name="Elipse 87" cx="5.318" cy="5.318" r="5.318" transform="translate(23.837 8.862)" fill="#3e95f8"/>
+          <path id="Trazado_94945" data-name="Trazado 94945" d="M24.457,17.67a9.362,9.362,0,0,0-4.763,1.323c.272.243.546.482.8.745a15.5,15.5,0,0,1,3.694,6.214,14.376,14.376,0,0,1,.547,2.355H32.59a1.251,1.251,0,0,0,1.251-1.251,9.4,9.4,0,0,0-9.385-9.385Z" transform="translate(4.699 3.293)" fill="#3e95f8"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
