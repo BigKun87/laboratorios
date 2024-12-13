@@ -1,13 +1,13 @@
           <div class="form-container form-custom-width text-center" th:fragment="formularioLogin">
               <img src="../assets/images/logos/logo_2.svg" alt="Logo" class="form-logo">
               <h5 class="mb-4">Inicia sesión con tu cuenta</h5>
-              <form th:action="@{/login}" method="post">
+              <form>
                   <!-- Campo de correo con ícono -->
                   <div class="mb-3 input-group">
                       <span class="input-group-text">
                           <img src="../assets/images/icons-login/user-icon.svg" alt="user Icon" style="width: 20px;">
                       </span>
-                      <input type="text" class="form-control" id="email" name="username" placeholder="Ingresa tu usuario">
+                      <input type="text" class="form-control" id="email" placeholder="Ingresa tu usuario" required maxlength="20" minlength="8">
                   </div>
 
                   <!-- Campo de contraseña con ojo -->
@@ -15,7 +15,7 @@
                     <span class="input-group-text">
                       <img src="../assets/images/icons-login/lock-icon.svg" alt="Contrasena Icon" style="width: 20px;">
                     </span>
-                      <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña">
+                      <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required maxlength="20" minlength="10">
                       <button type="button" class="btn btn-outline-secondary" id="togglePassword">
                           <img src="../../assets/images/icons-login/eye-closed-icon.svg" alt="Toggle Password Visibility" id="passwordIcon" style="width: 20px;">
                       </button>
@@ -26,10 +26,11 @@
                       <input type="checkbox" id="remember" class="me-2">
                       <label for="remember" class="mb-0">Recordar contraseña</label>
                   </div>
-
-                  <input type="submit" class="btn btn-primary w-100" value="Continuar">
+				<div>
+					<button type="submit" class="btn btn-primary w-100" >Continuar</button>
                   <!-- Botón de enviar -->
-
+				      <a th:href="@{/home/register}">Register/Signup here
+				</div>
               </form>
               <hr>
 
