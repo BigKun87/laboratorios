@@ -1,82 +1,98 @@
 package com.lp.entity;
 
+import java.math.BigInteger;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+
+import lombok.Data;
 
 @Entity
-@Table(name = "USUARIOS")
+@Table(name = "usuario")
+@Data
 public class UserEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_seq")
 	@SequenceGenerator(name = "user_seq", sequenceName = "usuarios_id_seq", allocationSize = 1)
-	private Long id;
+	private BigInteger id;
 
-	@Column(nullable = false, unique = true, length = 45)
+	@Column(name = "email", unique = true, nullable = false, length = 100)
+	@NotEmpty
+	@Email
 	private String email;
 
-	@Column(nullable = false, length = 64)
+	@Column(name = "password", nullable = false, length = 100)
+	@NotEmpty
 	private String password;
 
-	@Column(name = "nombres", nullable = false, length = 20)
-	private String firstName;
+	@Column(name = "nombre", nullable = false, length = 30)
+	private String nombre;
 
-	@Column(name = "ape_mat", nullable = false, length = 20)
-	private String lastName;
+	@Column(name = "apaterno", nullable = false, length = 20)
+	private String apellidoPaterno;
 
-	@Column(name = "rol", nullable = false, length = 30)
-	private String rol;
+	@Column(name = "amaterno", nullable = false, length = 20)
+	private String apellidoMaterno;
 
-	public Long getId() {
-		return id;
+	@Column(name = "numerocliente", nullable = false, length = 50)
+	private String numeroCliente;
+
+	@Column(name = "numerocelular", length = 20)
+	private String celular;
+
+	@Column(name = "nickname", length = 15)
+	private String nickname;
+
+	@Column(name = "activo", nullable = false)
+	private Boolean activo;
+
+	@Column(name = "f_alta", nullable = false)
+	private LocalDateTime fechaAlta;
+
+	@Column(name = "f_actualiza", nullable = false)
+	private LocalDateTime fechaActualizacion;
+
+	@Column(name = "ip", length = 45)
+	private String ip;
+
+	@Column(name = "usuario_actualiza", length = 15)
+	private String updatedBy;
+
+	@Column(name = "estatus", length = 20)
+	private String estatus;
+	
+	@ManyToMany(mappedBy = "usuarios")
+	private List<PerfilEntity> perfiles = new ArrayList<>();
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	private LaboratorioEntity laboratorio;
+
+	@PrePersist
+	public void prePersist() {
+		fechaAlta = LocalDateTime.now();
+		// TODO: obtener el usuario de la sesión
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	@PreUpdate
+	public void preUpdate() {
+		fechaActualizacion = LocalDateTime.now();
+		// TODO: Obtener el usuario de la sesión.
 	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public String getRol() {
-		return rol;
-	}
-
-	public void setRol(String rol) {
-			this.rol = rol;
-		}
 }
