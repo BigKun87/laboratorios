@@ -1,0 +1,2 @@
+INSERT INTO laboratorios.usuarios (id, email,nombres, ape_mat, "password", rol)
+	VALUES (nextval('usuarios_id_seq'), 'admin@admin.com','administrador','local','$2a$10$pR7WR5OdB.HOb/.LEuzR8uIMQ3oFbLyObWI4M1cRA55W8lSec26Zm','ADMIN');
