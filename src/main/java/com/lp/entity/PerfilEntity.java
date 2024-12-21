@@ -10,6 +10,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
@@ -32,8 +33,10 @@ public class PerfilEntity {
 
 	private String descripcion;
 
-	@JoinTable(name = "usuario_perfil", joinColumns = @JoinColumn(name = "perfil", nullable = false), inverseJoinColumns = @JoinColumn(name = "usuario", nullable = false))
+	@JoinTable(name = "usuario_perfil",
+			joinColumns = @JoinColumn(name = "perfil", nullable = false),
+			inverseJoinColumns = @JoinColumn(name = "usuario", nullable = false),
+			indexes = @Index(name = "usuario_perfil_index", columnList = "perfil, usuario", unique = true))
 	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private List<UserEntity> usuarios = new ArrayList<>();
-
 }
