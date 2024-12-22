@@ -1,19 +1,20 @@
 package com.lp.entity;
 
 import java.math.BigInteger;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Index;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -33,10 +34,25 @@ public class PerfilEntity {
 
 	private String descripcion;
 
-	@JoinTable(name = "usuario_perfil",
-			joinColumns = @JoinColumn(name = "perfil", nullable = false),
-			inverseJoinColumns = @JoinColumn(name = "usuario", nullable = false),
-			indexes = @Index(name = "usuario_perfil_index", columnList = "perfil, usuario", unique = true))
-	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@Column(name = "estatus", length = 20)
+	private String estatus;
+
+	@OneToMany(mappedBy = "perfil", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private List<UserEntity> usuarios = new ArrayList<>();
+
+	private LocalDateTime fechaAlta;
+
+	private LocalDateTime fechaActualizacion;
+
+	@PrePersist
+	public void prePersist() {
+		fechaAlta = LocalDateTime.now();
+		// TODO: obtener el usuario de la sesión
+	}
+
+	@PreUpdate
+	public void preUpdate() {
+		fechaActualizacion = LocalDateTime.now();
+		// TODO: Obtener el usuario de la sesión.
+	}
 }
