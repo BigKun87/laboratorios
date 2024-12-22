@@ -2,18 +2,15 @@ package com.lp.entity;
 
 import java.math.BigInteger;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.SequenceGenerator;
@@ -78,8 +75,8 @@ public class UserEntity {
 	@Column(name = "estatus", length = 20)
 	private String estatus;
 	
-	@ManyToMany(mappedBy = "usuarios")
-	private List<PerfilEntity> perfiles = new ArrayList<>();
+	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
+	private PerfilEntity perfil;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	private LaboratorioEntity laboratorio;

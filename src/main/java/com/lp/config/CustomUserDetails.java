@@ -19,7 +19,7 @@ public class CustomUserDetails implements UserDetails {
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		return Arrays.asList(new SimpleGrantedAuthority("ROLE_"+user.getRol())) ;
+		return Arrays.asList(new SimpleGrantedAuthority("ROLE_"+user.getPerfil().getNombre())) ;
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class CustomUserDetails implements UserDetails {
 	}
 	
 	public String getFullName() {
-		return user.getFirstName() + " " + user.getLastName();
+		return user.getNombre() + " " + user.getApellidoPaterno();
 	}
 
 }
