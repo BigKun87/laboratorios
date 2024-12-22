@@ -27,7 +27,7 @@ public class PerfilEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "perfil_seq")
-	@SequenceGenerator(name = "perfil_seq", sequenceName = "perfil_id_seq", allocationSize = 1)
+	@SequenceGenerator(name = "perfil_seq", sequenceName = "perfil_id_seq", allocationSize = 1, initialValue = 2)
 	private BigInteger id;
 
 	private String nombre;

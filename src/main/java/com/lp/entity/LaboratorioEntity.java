@@ -26,7 +26,7 @@ public class LaboratorioEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "laboratorio_seq")
-	@SequenceGenerator(name = "laboratorio_seq", sequenceName = "laboratorio_id_seq", allocationSize = 1)
+	@SequenceGenerator(name = "laboratorio_seq", sequenceName = "laboratorio_id_seq", allocationSize = 1, initialValue = 2)
 	private BigInteger id;
 
 	private String nombre;
