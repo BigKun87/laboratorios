@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Buscar Pacientes</title>
+</head>
+<body>
+    <h1>Buscar Pacientes</h1>
+    
+    <form action="#" th:action="@{/buscar}" method="get">
+        <input type="text" name="nombre" placeholder="Nombre del paciente" />
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div th:if="${error}" style="color: red;">
+        <p th:text="${error}"></p>
+    </div>
+
+    <table th:if="${pacientes}">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <!-- Otros encabezados de columna según necesites -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="paciente : ${pacientes}">
+                <td th:text="${paciente.codigo}">Codigo</td>
+                <td th:text="${paciente.nombre}">Nombre</td>
+                <!-- Otras columnas según necesites -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

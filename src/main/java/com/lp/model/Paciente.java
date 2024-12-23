@@ -28,6 +28,9 @@ public class Paciente {
 
     @NotNull(message = "El género no puede estar vacío")
     private char genero;
+    
+    @NotEmpty(message = "El código no puede estar vacío") 
+    private String codigo;
 
     private String direccion;
     private String telefono;
