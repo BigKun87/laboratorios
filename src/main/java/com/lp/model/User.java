@@ -1,5 +1,6 @@
 package com.lp.model;
 
+
 public class User {
 
 	private Long id;	
