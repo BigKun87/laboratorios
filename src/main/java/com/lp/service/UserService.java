@@ -25,5 +25,18 @@ public class UserService {
     public User findByEmail(String email) {
         return userRepository.findByEmail(email);
     }
+    
+    public boolean changePassword(String email, String currentPassword, String newPassword) throws Exception {
+        User user = userRepository.findByEmail(email);
+        if (user != null) {
+            String decryptedPassword = encryptionService.decrypt(user.getPassword());
+            if (decryptedPassword.equals(currentPassword)) {
+                user.setPassword(encryptionService.encrypt(newPassword));
+                userRepository.save(user);
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
