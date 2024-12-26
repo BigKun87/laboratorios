@@ -2,6 +2,9 @@ package com.lp.controller;
 
 import com.lp.model.Paciente;
 import com.lp.service.PacienteService;
+
+import dto.PacienteDTO;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +21,8 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import org.springframework.web.bind.annotation.RequestParam;
 import javax.validation.Valid;
+
+import java.io.IOException;
 import java.util.List;
 
 @Controller
@@ -35,7 +40,7 @@ public class PacienteController {
         return "nuevo_paciente";
     }
 
-    @PostMapping("/guardar")
+   /* @PostMapping("/guardar")
     public String guardarPaciente(@Valid @ModelAttribute Paciente paciente, BindingResult result, Model model) {
         if (result.hasErrors()) {
             logger.warn("Validation errors while submitting form: {}", result.getAllErrors());
@@ -46,6 +51,27 @@ public class PacienteController {
         return "redirect:/pacientes/nuevo?success";
         
         
+    }*/
+    
+    @GetMapping("/alta")
+    public String showAltaPacienteForm(Model model) {
+        model.addAttribute("pacienteDTO", new PacienteDTO());
+        return "altaPaciente";
+    }
+
+    @PostMapping("/alta")
+    public String savePaciente(@Valid @ModelAttribute("pacienteDTO") PacienteDTO pacienteDTO, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            return "altaPaciente";
+        }
+
+        try {
+            pacienteService.guardarPaciente(pacienteDTO);
+            model.addAttribute("message", "Paciente registrado exitosamente.");
+        } catch (IOException e) {
+            model.addAttribute("error", "Error al guardar el archivo PDF.");
+        }
+		return null;
     }
     
     @GetMapping("/buscar")
