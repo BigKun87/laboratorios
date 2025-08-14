@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Clonar código') {
+            steps {
+                git branch: 'main', url: 'https://github.com/BigKun87/laboratorios.git'
+            }
+        }
+        
+        stage('Verificar Docker') {
+            steps {
+                sh 'docker --version'
+                sh 'docker ps -a'
+            }
+        }
+        
+        stage('Ejecutar contenedor') {
+            steps {
+                sh 'docker run --rm alpine echo "Hola desde Docker en Jenkins"'
+            }
+        }
+    }
+}
