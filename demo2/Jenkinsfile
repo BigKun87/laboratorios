@@ -1,25 +1,57 @@
 pipeline {
     agent any
-    
+
+    options {
+        timestamps()              // 🕒 Muestra hora en cada línea del log
+        ansiColor('xterm')        // 🎨 Permite colores en consola
+    }
+
     stages {
         stage('Clonar código') {
             steps {
+                echo "\u001B[34m📥 Clonando repositorio desde GitHub...\u001B[0m"
                 git branch: 'main', url: 'https://github.com/BigKun87/laboratorios.git'
             }
+            post {
+                success {
+                    echo "\u001B[32m✅ Código clonado exitosamente\u001B[0m"
+                }
+                failure {
+                    echo "\u001B[31m❌ Error al clonar el repositorio\u001B[0m"
+                }
+            }
         }
-        
+
         stage('Verificar Docker') {
             steps {
+                echo "\u001B[36m🔍 Verificando instalación de Docker...\u001B[0m"
                 sh 'docker --version'
                 sh 'docker ps -a'
             }
+            post {
+                success {
+                    echo "\u001B[32m✅ Docker está funcionando correctamente\u001B[0m"
+                }
+                failure {
+                    echo "\u001B[31m❌ Docker no está disponible o hay errores\u001B[0m"
+                }
+            }
         }
-        
+
         stage('Ejecutar contenedor') {
             steps {
+                echo "\u001B[35m🚀 Ejecutando contenedor Alpine...\u001B[0m"
                 sh 'docker run --rm alpine echo "Hola desde Docker en Jenkins"'
+            }
+            post {
+                success {
+                    echo "\u001B[32m✅ Contenedor ejecutado correctamente\u001B[0m"
+                }
+                failure {
+                    echo "\u001B[31m❌ Falló la ejecución del contenedor\u001B[0m"
+                }
             }
         }
     }
 }
- /*TEST 2*/
+/*TEST3*/
